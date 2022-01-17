@@ -1,0 +1,7 @@
+I=lambda:map(int,input().split())
+P=print
+n,b=I()
+a=list(I())
+x=(b+sum(a))/n
+if any(i>x for i in a):P(-1)
+else:[P(x-i)for i in a]
